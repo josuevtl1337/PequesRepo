@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-20 105 400 300" style="enable-background:new 0 0 326 322;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;transfrom-origin:top;}
+	.st3{opacity:0.46;}
+	.st4{fill:#FFFFFF;transfrom-origin:top; animation:circleFadeIn 1.5s ease;}
+
+	
+	@keyframes circleFadeIn{
+	0%{transform:rotate(-180deg)}
+	100{transform:rotate(0deg)}
+	}
+
+	@keyframes sombrasFadein{
+	0%{opacity:0;}
+	80%{opacity:0.30;transform:rotate(7deg)}
+	100%{opacity:0.46;}
+	}
+
+	@keyframes logoFadein{
+	0%{opacity:0;}
+	50%{opacity:0;}
+	90%{opacity:0.9;}
+	100%{opacity:1}
+	}
+
+</style>
+<script>
+window.onload=function(){
+	// Get one of the SVG items by ID;
+    var svgItem = document.getElementById("Sombra1");
+    console.log(svgItem);
+	
+	setTimeout(function(){
+		//svgItem.style.opacity="0.46";
+		//svgItem.style.transform="rotate(7deg)";
+		console.log("algo");
+	}, 2000);
+	
+
+
+}
+
+</script>
+
+<g id="Sombra1">
+	<ellipse class="st2" cx="162" cy="161" rx="159.5" ry="154.5"/>
+</g>
+<g id="Sombra2" class="st3">
+	<g>
+		<ellipse class="st4" cx="162" cy="161" rx="159.5" ry="154.5"/>
+	</g>
+	<g>
+		<ellipse class="st4" cx="162" cy="161" rx="159.5" ry="154.5"/>
+	</g>
+</g>
+<g id="CirculoBlanco">
+	<ellipse class="st4" cx="162" cy="161" rx="159.5" ry="154.5"/>
+	
+		<image style="overflow:visible; animation:logoFadein 2s ease;" width="175" height="179" xlink:href="D50563A7.png" transform="matrix(1 0 0 1 73 103)">
+	</image>
+</g>
+</svg>

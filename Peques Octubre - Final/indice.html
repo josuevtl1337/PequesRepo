@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilo.css" />
+    <link rel="stylesheet" href="./fullpage.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./jquery-3.4.1.min.js"></script>
+    <title>Peques</title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <section class="section inicio">
+        <div id="home">
+          <div id="sombra"></div>
+          <!-- <object
+            id="logo"
+            data="graficos/SVG5555.svg"
+            type="image/svg+xml"
+          ></object> -->
+          <img id="logo" src="graficos/Logos.png" alt="" />
+
+          <video id="videoleche" autoplay loop muted>
+            <source src="graficos/lechestock.mp4" type="video/mp4" />
+          </video>
+          <div id="textoContenedor">
+            <h1 id="texto1">
+              Desarrollamos una leche que atiende las necesidades nutricionales
+              de los niños desde 1 a 5 años, aportando la combinación adecuada
+              de nutrientes.
+            </h1>
+          </div>
+          <img id="caja" src="graficos/CajaPeques.png" alt="" />
+          <img id="onda" src="graficos/onda.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="section descripcion">
+        <h1>Descripcion</h1>
+      </section>
+
+      <section class="section comparacion">
+        <h1>Comparacion</h1>
+      </section>
+
+      <section class="section resumen">
+        <h1>Resumen</h1>
+      </section>
+    </div>
+
+    <script src="./fullpage.min.js"></script>
+    <script src="./aplicacion.js"></script>
+    <!-- TimelineMax -- sirve para hacer multiples animaciones -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <!-- TweenlineMax -- sirve para hacer animaciones -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
