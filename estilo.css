@@ -8,6 +8,8 @@
   background: #e6e6e6;
 }
 
+
+/*--Seccion 1--*/
 .inicio video {
   position: absolute;
   right: 0;
@@ -125,4 +127,66 @@
   /* background-color: rgb(10, 94, 250); */
   opacity: 1;
   z-index: 1;
+}
+
+
+/*--Seccion 2--*/
+.descripcion{
+  background: url("graficos/pattern-icon-13.png"), radial-gradient(157.09% 157.09% at 80% 52.15%, #FFFFFF 0%, #CFCDCD 100%);
+  background-blend-mode: soft-light 10%;
+}
+
+#ondaverde{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.mejorcont{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mejorcont img{
+  height: 700px;
+}
+
+.desctexts{
+  text-align: center;
+  z-index: 2;
+  width: 125%;
+  margin-top: 20px;
+}
+
+.desctexts p{
+  color: #7E8086;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 22px;
+  letter-spacing: 0.005em;
+  margin-top: 10px;
+}
+
+.desctexts h3{
+  color: #68A7DD;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 1.3em;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+
+#text3 h3, #text4 h3{
+  color: #FFCD6A;
+}
+
+#text3 p, #text4 p{
+  color: #FFFFFF;
 }
