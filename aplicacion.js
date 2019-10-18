@@ -5,6 +5,8 @@ $(document).ready(function() {
   // const textos = document.getElementById("textoContenedor");
   const textos = document.querySelectorAll("#miniatura, #textoContenedor");
   const miniatura = document.getElementById("miniatura");
+  // const flecha = document.getElementById("flechaContenedor");
+  // const svg = document.getElementById("flecha").getSVGDocument();
   const tl = new TimelineMax({ delay: 0.5 });
   // tl.fromTo(onda, 0.2, { x: "100", opacity: 0 }, { x: "0", opacity: 1 });
   // tl.fromTo(leche, 0.5, { x: "100", opacity: 0 }, { x: "0", opacity: 1 });
@@ -26,7 +28,6 @@ $(document).ready(function() {
       const title = section.querySelector("h1");
       const video = document.getElementById("videoleche");
       const logo = document.getElementById("logo");
-      const textos = document.getElementById("textoContenedor");
 
       if (destination.index === 0) {
         // const tl = new TimelineMax({ delay: 0.5 });
@@ -38,12 +39,6 @@ $(document).ready(function() {
             { x: "-100", opacity: 0 },
             { x: "0", opacity: 1 }
           )
-          .fromTo(
-            miniatura,
-            0.2,
-            { x: "-100", opacity: 0 },
-            { x: "0", opacity: 1 }
-          )
           .fromTo(logo, 0.6, { y: "-200", opacity: 0 }, { y: "0", opacity: 1 });
 
         // console.log(destination.item);
@@ -51,9 +46,19 @@ $(document).ready(function() {
         video.currentTime = 0;
         video.play();
       } else {
-        tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
+        tl.fromTo(section, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
         console.log(destination.item);
       }
     }
   });
+  var flechaz = document.getElementById("flechaContenedor");
+  console.log(flechaz);
+  const svg = document.getElementById("flecha").getSVGDocument();
+  console.log(svg);
+
+  // console.log(svg);
+  // $(svg).click(function() {
+  //   // destination.index = 1;
+  //   alert("funciona");
+  // });
 });
