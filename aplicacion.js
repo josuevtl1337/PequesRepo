@@ -51,14 +51,25 @@ $(document).ready(function() {
       }
     }
   });
-  var flechaz = document.getElementById("flechaContenedor");
-  console.log(flechaz);
-  const svg = document.getElementById("flecha").getSVGDocument();
-  console.log(svg);
+
+  // var flechaa = document.querySelector("svg");
+  // console.log(flechaz);
+  // const svg = document.getElementById("flecha").getSVGDocument();
+  // console.log(svg);
 
   // console.log(svg);
-  // $(svg).click(function() {
-  //   // destination.index = 1;
-  //   alert("funciona");
-  // });
+  var flecha = cargarFlecha();
+  function cargarFlecha() {
+    if (flecha !== "undefined") {
+      var flecha = document.getElementById("flecha");
+      console.log(flecha);
+      // cargarFlecha();
+    } else {
+      alert("funciona");
+    }
+  }
+  $(flecha).click(function() {
+    // destination.index = 1;
+    alert("funciona");
+  });
 });

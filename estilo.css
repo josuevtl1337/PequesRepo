@@ -147,11 +147,19 @@
   grid-column: 2/3;
   grid-row: 4/5;
   justify-self: center;
+  animation: animacionFlecha 2s infinite;
 }
 #flecha {
   z-index: 4;
 }
-
+@keyframes animacionFlecha {
+  from {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /*--Seccion 2--*/
 .descripcion {
   background: url("graficos/pattern-icon-13.png"),
