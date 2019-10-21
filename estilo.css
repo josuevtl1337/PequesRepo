@@ -9,7 +9,10 @@
 }
 
 
-/*--Seccion 1--*/
+/* ------------------------------------- */
+/* Sección 'inicio' */
+/* ------------------------------------- */
+
 .inicio video {
   position: absolute;
   right: 0;
@@ -130,7 +133,9 @@
 }
 
 
-/*--Seccion 2--*/
+/* ------------------------------------- */
+/* Sección 'descripcion' */
+/* ------------------------------------- */
 .descripcion{
   background: url("graficos/pattern-icon-13.png"), radial-gradient(157.09% 157.09% at 80% 52.15%, #FFFFFF 0%, #CFCDCD 100%);
   background-blend-mode: soft-light 10%;
@@ -173,7 +178,7 @@
   margin-top: 10px;
 }
 
-.desctexts h3{
+.desctexts h1{
   color: #68A7DD;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
@@ -183,10 +188,50 @@
   letter-spacing: 0.005em;
 }
 
-#text3 h3, #text4 h3{
+#text3 h1, #text4 h1{
   color: #FFCD6A;
 }
 
 #text3 p, #text4 p{
   color: #FFFFFF;
+}
+
+
+/* ------------------------------------- */
+/* Sección 'comparacion' */
+/* ------------------------------------- */
+
+.peques{
+  background: #0EB9C7;
+}
+
+.cntinfo img, .cntcaja img{
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.cntcaja :nth-child(2){
+  width: 50%;
+  margin-top: 20px;
+}
+
+.cnticonos{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: white;
+  line-height: 151.4%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cnticonos div{
+  width: 25%;
 }
