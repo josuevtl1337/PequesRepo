@@ -45,9 +45,6 @@ $(document).ready(function() {
 
         video.currentTime = 0;
         video.play();
-      } else {
-        tl.fromTo(section, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
-        console.log(destination.item);
       }
     }
   });
