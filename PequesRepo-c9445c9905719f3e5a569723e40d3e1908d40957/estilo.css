@@ -8,8 +8,6 @@
   background: #e6e6e6;
 }
 
-
-/*--Seccion 1--*/
 .inicio video {
   position: absolute;
   right: 0;
@@ -144,7 +142,6 @@
   z-index: 1;
 }
 
-<<<<<<< HEAD
 #flechaContenedor {
   z-index: 4;
   grid-column: 2/3;
@@ -171,16 +168,6 @@
 }
 
 #ondaverde {
-=======
-
-/*--Seccion 2--*/
-.descripcion{
-  background: url("graficos/pattern-icon-13.png"), radial-gradient(157.09% 157.09% at 80% 52.15%, #FFFFFF 0%, #CFCDCD 100%);
-  background-blend-mode: soft-light 10%;
-}
-
-#ondaverde{
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -188,45 +175,27 @@
   z-index: 1;
 }
 
-<<<<<<< HEAD
 .mejorcont {
-=======
-.mejorcont{
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
   z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-<<<<<<< HEAD
 .mejorcont img {
   height: 700px;
 }
 
 .desctexts {
-=======
-.mejorcont img{
-  height: 700px;
-}
-
-.desctexts{
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
   text-align: center;
   z-index: 2;
   width: 125%;
   margin-top: 20px;
 }
 
-<<<<<<< HEAD
 .desctexts p {
   color: #7e8086;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-=======
-.desctexts p{
-  color: #7E8086;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
   font-style: normal;
   font-weight: 300;
   font-size: 1.1em;
@@ -235,15 +204,9 @@
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
 .desctexts h3 {
   color: #68a7dd;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-=======
-.desctexts h3{
-  color: #68A7DD;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
   font-style: normal;
   font-weight: 550;
   font-size: 1.3em;
@@ -251,7 +214,6 @@
   letter-spacing: 0.005em;
 }
 
-<<<<<<< HEAD
 #text3 h3,
 #text4 h3 {
   color: #ffcd6a;
@@ -261,12 +223,3 @@
 #text4 p {
   color: #ffffff;
 }
-=======
-#text3 h3, #text4 h3{
-  color: #FFCD6A;
-}
-
-#text3 p, #text4 p{
-  color: #FFFFFF;
-}
->>>>>>> e99c897590fb1dbeb87b16df0c8e14187f3daada
