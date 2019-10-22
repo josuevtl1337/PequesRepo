@@ -20,14 +20,20 @@ $(document).ready(function() {
     .fromTo(logo, 0.6, { y: "-200", opacity: 0 }, { y: "0", opacity: 1 });
 
   new fullpage("#fullpage", {
+    controlArrows: true,
     autoScrolling: true,
     navigation: true,
+    scrollHorizontally: true,
     onLeave: (origin, destination) => {
       const tl = new TimelineMax({ delay: 0.5 });
       const section = destination.item;
-      const title = section.querySelector("h1");
+      const title = section.querySelector("p");
       const video = document.getElementById("videoleche");
       const logo = document.getElementById("logo");
+      var foto = $("#mejorcont");
+      var parrafos1 = $("#text1, #text2");
+      var parrafos2 = $("#text3, #text4");
+      var globos = $("#globos1");
 
       if (destination.index === 0) {
         // const tl = new TimelineMax({ delay: 0.5 });
@@ -45,8 +51,18 @@ $(document).ready(function() {
 
         video.currentTime = 0;
         video.play();
+      } else if (destination.index === 1) {
+        tl.fromTo(
+          parrafos1,
+          0.3,
+          { x: "-200", opacity: 0 },
+          { x: "0", opacity: 1 }
+        )
+          .fromTo(parrafos2, 0.3, { x: 200, opacity: 0 }, { x: 0, opacity: 1 })
+          .fromTo(foto, 0.5, { y: -200, opacity: 0 }, { y: 0, opacity: 1 })
+          .fromTo(globos, 0.3, { x: -200, opacity: 0 }, { x: 0, opacity: 1 });
       } else {
-        tl.fromTo(section, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
+        tl.fromTo(section, 0.5, { y: 0, opacity: 0 }, { y: 0, opacity: 1 });
         console.log(destination.item);
       }
     }
