@@ -1,3 +1,5 @@
+/* en el key listener hacer una validacion de mayus a minus y ese valor cargarlo en la caja de texto  
+y la longitud minima*/
 * {
   margin: 0;
   padding: 0;
@@ -166,6 +168,14 @@
   /* border: 5px green solid; */
 }
 .descripcion {
+  background-color: white;
+}
+.descripz {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
   background: url("graficos/pattern-icon-13.png"),
     radial-gradient(157.09% 157.09% at 80% 52.15%, #ffffff 0%, #cfcdcd 100%);
   background-blend-mode: soft-light 10%;
@@ -187,6 +197,10 @@
 #mejorcont img {
   height: 80%;
 }
+#globos1 {
+  /* left:-20px; */
+  /* animation: rubberBand 5s infinite; */
+}
 
 .desctexts {
   text-align: center;
@@ -207,6 +221,7 @@
 }
 
 .desctexts h3 {
+  text-shadow: 1px 1px 1px rgba(5, 84, 158, 0.445);
   color: #68a7dd;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
@@ -219,11 +234,13 @@
 #text3 h3,
 #text4 h3 {
   color: #ffcd6a;
+  text-shadow: 1px 1px 1px rgba(24, 116, 111, 0.74);
 }
 
 #text3 p,
 #text4 p {
   color: #ffffff;
+  text-shadow: 1px 1px 1px rgba(24, 116, 111, 0.74);
 }
 
 /* ------------------------------------- */
@@ -261,10 +278,77 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+#btninfo {
+  cursor: pointer;
+  /* box-shadow: -10px -10px 30px teal; */
+}
 
 .cnticonos div {
   width: 25%;
 }
 .icono {
-  width: 25%;
+  width: 22%;
+  cursor: pointer;
+}
+.omega {
+  /* animation: bounce 4s infinite; */
+  /* animation: rotando 10s infinite; */
+}
+@keyframes rotando {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
