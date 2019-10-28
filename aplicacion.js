@@ -144,4 +144,27 @@ $(document).ready(function() {
   //     });
   //   }
   // }
+
+  // window.onload = function() {
+  //   // morphing.play();
+  //   var btn = document.getElementById("btn-click");
+  //   var welcome = document.getElementById("welcome");
+  //   btn.classList.add("animated", "display", "flipInY");
+  //   welcome.classList.add("animated", "display", "flipInY");
+  //   btn.addEventListener("click", function() {
+  //     $(".contenedor-welcome").hide();
+  //     morphing.play();
+  //   });
+  //   // btn.css("display", "none");
+  // };
+  // document.addEventListener("DOMContentLoaded", function() {
+  //   var btn = document.getElementById("btn-click");
+  //   var welcome = document.getElementById("welcome");
+  //   btn.classList.add("animated", "display", "flipInY");
+  //   welcome.classList.add("animated", "display", "flipInY");
+  //   btn.addEventListener("click", function() {
+  //     $(".contenedor-welcome").hide();
+  //     morphing.play();
+  //   });
+  // });
 });

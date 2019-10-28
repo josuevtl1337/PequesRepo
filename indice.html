@@ -12,12 +12,94 @@
       rel="stylesheet"
     />
     <script src="./jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
+      integrity="sha256-BuxrUdr/4YoztQLxT6xmdO6hSQw2d6BtBUY1pteGds4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="morph.css" />
     <title>Peques</title>
   </head>
   <body>
     <div id="fullpage">
       <section class="section inicio">
         <div class="home">
+          <!-- <div class="contenedor-welcome">
+            <h1 id="welcome">Bienvenido a PEQUES</h1>
+            <button id="btn-click">Comenzar</button>
+          </div>
+
+          <svg
+            id="morph"
+            width="100%"
+            height="100%"
+            viewBox="0 0 1920 1080"
+            preserveAspectRatio="none"
+          >
+            <path
+              class="morph"
+              d="M0 1101V0H1922V1101C1922 1101 1049 1101 911 1101C773 1101 0 1101 0 1101Z"
+              fill="#0CB5C2"
+            ></path>
+          </svg> -->
+          <!-- <script>
+            var morphing = anime({
+              targets: ".morph , #morph",
+              d: [
+                {
+                  value:
+                    "M0 946.22V0H1922V842.507C1922 842.507 1255 560.047 902 842.507C549 1124.97 0 946.22 0 946.22Z"
+                },
+                {
+                  value:
+                    "M0 431.632V0H1922V384.321C1922 384.321 1208 532.098 902 384.321C596 236.545 0 431.632 0 431.632Z"
+                },
+                {
+                  value:
+                    "M0 205V0H1922V182.53C1922 182.53 1500.5 0 868 94.0036C235.5 188.007 0 205 0 205Z"
+                },
+                {
+                  value:
+                    "M0 17V0H1920V15.1367C1920 15.1367 1547.89 20.4506 947.013 10.2253C346.139 0 0 17 0 17Z"
+                }
+              ],
+              easing: "easeInOutQuint",
+              duration: "1700",
+              loop: false,
+              autoplay: false
+            }); -->
+<!-- 
+            // a.addEventListener("click", function() {
+            //   morphing.restart();
+            //   overlay.classList.add("pointer");
+            //   sect2.classList.add("animated", "display", "flipInY", "delay-1s");
+            // });
+
+            // s.addEventListener("click", function() {
+            //   morphing.reverse();
+            //   morphing.play();
+            //   overlay.classList.remove("pointer");
+            //   sect2.classList.remove(
+            //     "animated",
+            //     "display",
+            //     "flipInY",
+            //     "delay-1s"
+            //   );
+            // });
+            // document.addEventListener("DOMContentLoaded", function() {
+            //   morphing.play();
+            // });
+            // function asd() {
+            //   morphing.reverse();
+            // }
+            // window.setTimeout("asd()", 5000); -->
+          </script>
           <!-- <div id="marco"></div> -->
           <div id="sombra2"></div>
           <img id="marcoIMG" src="graficos/imagenLeche.png" />

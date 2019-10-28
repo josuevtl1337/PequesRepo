@@ -216,10 +216,18 @@ y la longitud minima*/
   padding: 4%;
   border-radius: 1em;
 }
+.fondoTxt:hover {
+  cursor: pointer;
+  background-color: #86c6cc;
+}
 .fondoTxt2 {
   background-color: #ffffff;
   padding: 4%;
   border-radius: 0.5em;
+}
+.fondoTxt2:hover {
+  cursor: pointer;
+  background-color: #15cab2;
 }
 #title-desc-1 {
   font-size: 2em;
