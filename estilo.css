@@ -176,9 +176,20 @@ y la longitud minima*/
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background: url("graficos/pattern-icon-13.png"),
+  background: url("graficos/patron-nubes.png"),
     radial-gradient(157.09% 157.09% at 80% 52.15%, #ffffff 0%, #cfcdcd 100%);
   background-blend-mode: soft-light 10%;
+  background-position: 0 0;
+  background-repeat: round;
+  animation: animate 40s linear infinite;
+}
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100vw 0;
+  }
 }
 
 #ondaverde {
@@ -191,36 +202,59 @@ y la longitud minima*/
 
 #mejorcont {
   z-index: 2;
-  height: 80%;
+  height: 70%;
 }
 
 #mejorcont img {
-  height: 80%;
 }
 #globos1 {
   /* left:-20px; */
   /* animation: rubberBand 5s infinite; */
 }
-
+.fondoTxt {
+  background-color: #b6e7eb;
+  padding: 4%;
+  border-radius: 1em;
+}
+.fondoTxt2 {
+  background-color: #ffffff;
+  padding: 4%;
+  border-radius: 0.5em;
+}
+#title-desc-1 {
+  font-size: 2em;
+}
 .desctexts {
   text-align: center;
   z-index: 2;
   width: 125%;
   margin-top: 20px;
 }
-
+#parrafo1 {
+  opacity: 0;
+}
+#parrafo2 {
+  opacity: 0;
+}
+#parrafo3 {
+  opacity: 0;
+}
+#parrafo4 {
+  opacity: 0;
+}
 .desctexts p {
-  color: #7e8086;
+  color: #727272;
+  text-shadow: 1px 1px 1px rgba(37, 168, 255, 0.657);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9em;
   line-height: 22px;
   letter-spacing: 0.005em;
   margin-top: 10px;
 }
 
-.desctexts h3 {
+/* .desctexts h3 {
   text-shadow: 1px 1px 1px rgba(5, 84, 158, 0.445);
   color: #68a7dd;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -229,18 +263,27 @@ y la longitud minima*/
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.005em;
+} */
+.desctexts h3 {
+  text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.445);
+  color: #ffffff;
+  font-family: "Amatic SC", cursive;
+  font-style: normal;
+  font-weight: 560;
+  font-size: 2em;
+  line-height: 24px;
+  letter-spacing: 0.005em;
 }
 
 #text3 h3,
 #text4 h3 {
-  color: #ffcd6a;
-  text-shadow: 1px 1px 1px rgba(24, 116, 111, 0.74);
+  color: #e0ff14;
 }
 
 #text3 p,
 #text4 p {
   color: #ffffff;
-  text-shadow: 1px 1px 1px rgba(24, 116, 111, 0.74);
+  text-shadow: 1px 1px 1px rgba(230, 178, 8, 0.698);
 }
 
 /* ------------------------------------- */
@@ -248,7 +291,7 @@ y la longitud minima*/
 /* ------------------------------------- */
 
 .peques {
-  background: #0eb9c7;
+  background-color: #36cce5;
 }
 
 .cntinfo img,
@@ -257,19 +300,43 @@ y la longitud minima*/
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .cntcaja :nth-child(2) {
-  width: 50%;
-  margin-top: 20px;
+  width: 80%;
+  margin-top: -5%;
+}
+#txt {
+  text-align: center;
+  font-family: "Amatic SC";
+  font-size: 3em;
+  color: white;
+  font-weight: 550;
+}
+
+.cntlecheComun img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+.rayo img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bandera img {
+  width: 95%;
 }
 
 .cnticonos {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 0.9em;
   color: white;
   line-height: 151.4%;
   text-align: center;
@@ -279,76 +346,38 @@ y la longitud minima*/
   justify-content: space-between;
 }
 #btninfo {
+  width: 60%;
   cursor: pointer;
   /* box-shadow: -10px -10px 30px teal; */
 }
 
 .cnticonos div {
-  width: 25%;
+  width: 40%;
 }
 .icono {
-  width: 22%;
+  width: 20%;
+  /* max-width: 20%; */
   cursor: pointer;
 }
 .omega {
   /* animation: bounce 4s infinite; */
   /* animation: rotando 10s infinite; */
 }
-@keyframes rotando {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#nube1 {
+  width: 50%;
+}
+#nube2 {
+  width: 30%;
 }
 
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
+.nube1 {
+  width: 20%;
 }
-
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+.avion img {
+  /* border: orange 2px solid; */
+  position: relative;
+  width: 50%;
+  z-index: 3;
+  /* justify-self: center; */
 }
