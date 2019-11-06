@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="./jquery-3.4.1.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"
@@ -23,6 +24,7 @@
       integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="morph.css" />
     <title>Peques</title>
   </head>
@@ -102,7 +104,10 @@
           </script>
           <!-- <div id="marco"></div> -->
           <div id="sombra2"></div>
-          <img id="marcoIMG" src="graficos/imagenLeche.png" />
+      
+            <img id="marcoIMG" src="graficos/imagenLeche.png" />
+        
+         
           <div id="sombra"></div>
 
           <div id="logoContenedor">
@@ -117,8 +122,13 @@
           <video id="videoleche" autoplay loop muted>
             <source src="graficos/lechestock.mp4" type="video/mp4" />
           </video>
+          <div class="miniatura" data-text="Play"><span id="playbtn">Play</span></div>
+         
+          <!-- <div class="sim-button button4" data-text="Login">
+              <span>Login</span>
+            </div> -->
 
-          <img id="miniatura" src="graficos/video.png" alt="" />
+          <!-- <img id="miniatura" src="graficos/video.png" alt="" /> -->
           <div id="textoContenedor">
             <h1 id="texto1">
               Desarrollamos una leche que atiende las necesidades nutricionales
@@ -131,8 +141,12 @@
           </div>
 
           <img id="caja" src="graficos/CajaPeques.png" alt="" />
-          <img id="onda" src="graficos/onda.svg" alt="" />
+          <img id="onda" src="graficos/onda.svg" />
+          <video id="videoNena" stop>
+            <source src="graficos/peques.mp4"  type="video/mp4" />
+          </video>
         </div>
+     
       </section>
 
       <section class="section descripcion">
@@ -140,62 +154,65 @@
         <div class="desc-grid">
           <img id="ondaverde" src="graficos/Subtract.png" />
           <img id="globos1" src="graficos/Recurso 8.png" />
-          <!-- 
-                <div class="mejorcont"> -->
+
           <img src="graficos/mejor.png" id="mejorcont" />
-
-          <!-- </div> -->
-
-          <div class="desctexts" id="text1">
-            <div class="fondoTxt">
-              <h3 id="title-desc-1">¿Qué es Peques?</h3>
-            </div>
-            <p id="parrafo1">
-              Desarrollamos una leche modificada destinada a niños de entre 1 y
-              5 años de edad, que permite incorporar de manera sencilla los
-              nutrientes más importantes que necesita en esta etapa tan
-              importante.
-            </p>
+          <img src="graficos/scrolldown.gif"id="tap">
+  
+          <div id="accordion">
+              <h3 id="title-desc-1">¿Qué es Peques? </h3>              
+                  <div class="fondoTxt">
+                    <p >
+                        Desarrollamos una leche modificada destinada a niños de entre 1 y
+                        5 años de edad, que permite incorporar de manera sencilla los
+                        nutrientes más importantes que necesita.
+                      </p>
+                </div>         
+                <h3 id="title-desc-1">¿Es un sustituto de la leche materna?</h3>         
+                <div class="fondoTxt">
+                <p >
+                  No, sino que se trata de una opción con una alta calidad
+                  nutricional, superando incluso lo que ofrece la leche blanca
+                  común.
+                </p>
+              </div>
           </div>
-          <div class="desctexts" id="text2">
-            <div class="fondoTxt">
-              <h3 id="title-desc-2">¿Es un sustituto de la leche materna?</h3>
-            </div>
-            <p id="parrafo2">
-              No, sino que se trata de una opción con una alta calidad
-              nutricional, superando incluso lo que ofrece la leche blanca
-              común.
-            </p>
-          </div>
-          <div class="desctexts" id="text3">
-            <div class="fondoTxt2">
-              <h3 id="title-desc-3">Neurodesarrollo</h3>
-            </div>
-            <p id="parrafo3">
+
+         <div id="accordion2">
+
+          <h3 id="title-desc-2">Neurodesarrollo</h3>
+          <div class="fondoTxt2">
+            <p >
               Con esta leche aportamos los nutrientes adecuados para que junto a
               un entorno rico de estímulos y una buena integridad física, el
               desarrollo neuronal del niño culmine con éxito.
             </p>
           </div>
-          <div class="desctexts" id="text4">
+       
+    
+
+            <h3 id="title-desc-2">Neuronutrición</h3>
             <div class="fondoTxt2">
-              <h3 id="title-desc-4">Neuronutrición</h3>
-            </div>
-            <p id="parrafo4">
-              Peques aporta la combinación adecuada de: DHA, Omega 3 y 6,
-              Calcio, Hierro, Zinc, Colina y 13 Vitaminas fundamentales para el
-              buen desarrollo físico, visual e intelectual de los chicos.
-            </p>
+              <p >
+                Peques aporta la combinación adecuada de: DHA, Omega 3 y 6,
+                Calcio, Hierro, Zinc, Colina y 13 Vitaminas fundamentales para el
+                buen desarrollo físico, visual e intelectual de los chicos.
+              </p>
           </div>
+          
+         </div>     
         </div>
+      
       </section>
 
       <section class="section comparacion">
         <article class="slide">
           <div class="peques">
+            <img src="graficos/fondotest.png" id="fondotest">
             <img id="nube1" src="graficos/comparacion/nube1.png" alt="" />
             <img id="nube2" src="graficos/comparacion/nube2.png" alt="" />
             <img id="nube3" src="graficos/comparacion/nube3.png" alt="" />
+            <img id="nube4" src="graficos/comparacion/nube1.png" alt="" />
+            <img id="nube5" src="graficos/comparacion/nube3.png" alt="" />
 
             <div class="cntinfo">
               <img src="graficos/comparacion_grafico.png" />
@@ -206,10 +223,15 @@
                 <h1 id="txt">PEQUES</h1>
               </div>
               <img src="graficos/Leche con vaso.png" />
-              <img
+              <!-- <img
                 src="graficos/comparacion/botoninfocompleta.svg"
                 id="btninfo"
-              />
+              /> -->
+              <div class="button_cont" align="center">
+                <a id="btninfo">
+                  mas informacion
+                </a>
+              </div>
             </div>
 
             <div class="cntlecheComun">
@@ -218,7 +240,7 @@
             </div>
 
             <div class="rayo">
-              <img src="graficos/comparacion//rayo.png" alt="" />
+              <img src="graficos/comparacion/rayo.png" alt="" />
             </div>
             <div class="cnticonos">
               <div class="omega">
@@ -262,15 +284,44 @@
                 <img src="graficos/comparacion/avion.png" alt="" />
               </div>
             </div>
-            <div class="bandera">
+            <!-- <div class="bandera">
               <img src="graficos/comparacion/bandera.png" alt="" />
+            </div> -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
             </div>
+            <img id="infonutric" src="graficos/infonutric.png" alt="">
           </div>
         </article>
       </section>
 
+      
       <section class="section resumen">
-        <h1>Resumen</h1>
+        <div class="footergrid">
+          <div class="redes">
+            <img src="graficos/redes-fb.png" alt="">         
+            <img src="graficos/redes-ig.png" alt="">
+            <img src="graficos/redes-yt.png" alt="">
+          </div>
+
+          <div class="footer">
+            <div class="infooter">
+                <h1>Tregar</h1>
+                <p>GARCÍA HNOS. AGROINDUSTRIAL S.R.L. <br>
+                  9 de Julio 322 - S3044ACH <br>
+                  GOBERNADOR CRESPO (Santa Fe) Argentina.</p>
+            </div>
+
+            <div class="links">
+              
+              <a href="">Ir a Tregar</a>
+              <a href="" class="contacto">CONTACTO</a>
+            </div>
+            
+          </div>
+        </div>
       </section>
     </div>
 
@@ -288,5 +339,19 @@
       integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
       crossorigin="anonymous"
     ></script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" 
+    integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" 
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" 
+     integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo="
+     crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"
+      integrity="sha256-5jxCMRC1PYU02qJn+fj+DPuxcQZCh0DR8GRwi4iKoRc=" 
+     crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js" 
+     integrity="sha256-LBjlnpPrM6Aig8LDFc9PJctPHLGUc6RaUvnmXE4hV5Y=" 
+     crossorigin="anonymous"></script>
   </body>
 </html>
